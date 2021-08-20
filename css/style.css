@@ -65,6 +65,13 @@ h2{
     line-height: 1.14;
     Letter-spacing: 0.02em;
 }
+.header-light{
+    color: var(--accent-hover-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    Letter-spacing: 0.02em;
+}
 .contact{
     color: var(--main-text-color);
     font-weight: 500;
