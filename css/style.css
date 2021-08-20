@@ -39,6 +39,7 @@ body{
     color: var(--accent-hover-color);
 }
 .header-button{
+    color: rgba(33, 33, 33, 1);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -132,6 +133,7 @@ h3{
     letter-spacing: 0.03em;
 }
 .filter-button{
+    color: rgba(33, 33, 33, 1);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
