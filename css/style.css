@@ -14,6 +14,9 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 .logo-web {
     color: var(--accent-color);
@@ -27,6 +30,21 @@ body{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+p, h2, h3{
+    margin-top: 0; 
+    margin-bottom: 0;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
 
 .list {
     list-style: none;
@@ -38,18 +56,25 @@ body{
 .link:focus{
     color: var(--accent-hover-color);
 }
-.header-button{
-    color: rgba(33, 33, 33, 1);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    Letter-spacing: 0.03em;
+
+/* Header */
+.main-nav{
+    display: flex;
 }
-.btn:hover,
-.btn:focus{
-    background-color: var(--accent-hover-color);
-    color: var(--main-title-color);
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+.header-list{
+    display: flex;
+}
+.header-item:not(:last-child){
+    margin-right: 50px;
+}
+.contacts-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 h2{
     color: var(--secondary-title-color);
@@ -60,69 +85,177 @@ h2{
     Letter-spacing: 0.03em;
 }
 .header-link{
+    display: block;
     color: var(--secondary-title-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     Letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .header-light{
+    display: block;
     color: var(--accent-hover-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     Letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contact{
+    display: block;
     color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     Letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;   
+}
+.contact-item:not(:last-child){
+    display: block;
+    margin-right: 50px;
+}
+.contacts-list{
+    display: flex;
 }
 /* hero */
 .hero{
     background-color: #2F303A;
-    text-align: center;
-    }
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
 .about-hero{
+    width: 696px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     color: var(--main-title-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    
+}
+.hero-button{
+    display: block;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    font-family:inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    background-color: var(--accent-color);
+}
+.btn:hover,
+.btn:focus{
+    background-color: var(--accent-hover-color);
+    color: rgba(255, 255, 255, 1);
 }
 
-
 /* About list */
-h3{
-    color: var(--secondary-title-color);
-    font-weight: 700;
-    letter-spacing: 0.03em; 
-    
+.about-list{
+    display: flex;
+    margin-top: 94px;
+}
+.about-item{
+width: 270px;
+}
+.about-item:not(:last-child){
+    margin-right: 30px;
 }
 .about-head{
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.1;
+    color: var(--secondary-title-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px; 
 }
 .about-text{
     color: var(--main-text-color);
-    font-size: 16px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.7;
     Letter-spacing: 0.03em;
 }
+
+/* Work */
+.work-head{
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.work-list{
+    display: flex;
+}
+.work-item:not(:last-child){
+    margin-right: 30px;
+}
+.work-item{
+    margin-bottom: 94px;
+}
+
+/* Team */
+
+.team-list{
+    display: flex;
+    margin-bottom: 94px;
+}
+.team-item:not(:last-child){
+    margin-right: 30px;
+}
+.team-head{
+    margin-top: 30px;
+}
 .team-porfolio{
+    margin-top: 10px;
     color: var(--main-text-color);
     font-size: 16px;
     line-height: 1.17;
     Letter-spacing: 0.03em;
 }
+
 /* Footer */
 .footer{
     background-color: #2F303A;
-    color: var(--main-title-color);
+    height: 252px;
+    width: 1600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer-container{
+    height: 252px;
+    padding-top: 60px;
+}
+.logo{
+    width: 145px;
+    height: 31px;
+    padding: 0;
+}
+.footer-contact{
+    width: 240px;
+    height: 81px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.link-footer{
+    color: rgba(255, 255, 255, 0.6);
+}
+.contacts-item{
+    margin-top: 10px;
 }
 .logo-studio-footer{
     color: var(--main-title-color);
@@ -131,6 +264,54 @@ h3{
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+}
+.address{
+    color: var(--main-title-color);
+    font-style: normal;
+}
+.contacts-list-footer{
+    display: block;
+    text-align: left;
+}
+
+/* Next page  */
+
+/* Filter portfolio */
+
+.filter-button-list{
+    display: flex;
+    margin-top: 94px;
+    justify-content: center;
+}
+.filter-button{
+    height: 38px;
+    padding: 6px 22px;
+    box-sizing: border-box;
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.filter-button-item:not(:last-child){
+    margin-right: 8px;
+}
+.filter-button-oll{
+    width: 73px;
+    height: 38px;
+    box-sizing: border-box;
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: rgba(255, 255, 255, 1);
 }
 .filter-button{
     color: rgba(33, 33, 33, 1);
@@ -141,6 +322,25 @@ h3{
     Letter-spacing: 0.03em;
 }
 
+/* Portfolio */
+
+.portfolio-card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+.portfolio-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+.portfolio-item:nth-child(3n){
+    margin-left: 0;
+}
 .portfolio-head{
     font-size: 18px;
     line-height: 2;  
