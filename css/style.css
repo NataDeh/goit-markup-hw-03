@@ -124,10 +124,10 @@ h2{
 /* hero */
 .hero{
     background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .about-hero{
@@ -159,18 +159,18 @@ h2{
     margin: 0 auto 0 auto;
     padding: 0;
     background-color: var(--accent-color);
-}
-.btn:hover,
-.btn:focus{
-    background-color: var(--accent-hover-color);
     color: rgba(255, 255, 255, 1);
 }
 
 /* About list */
+.about-section{
+    padding-top: 94px;
+}
 .about-list{
     display: flex;
-    margin-top: 94px;
+
 }
+
 .about-item{
 width: 270px;
 }
@@ -194,6 +194,10 @@ width: 270px;
 }
 
 /* Work */
+.work{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .work-head{
     margin-top: 94px;
     margin-bottom: 50px;
@@ -204,21 +208,32 @@ width: 270px;
 .work-item:not(:last-child){
     margin-right: 30px;
 }
-.work-item{
-    margin-bottom: 94px;
-}
 
 /* Team */
+.team{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgba(245, 244, 250, 1);
+    padding-top: 30px;
+    padding-bottom: 94px;
+}
+.team-item{
+    background-color: #FFFFFF;
+}
 
 .team-list{
     display: flex;
-    margin-bottom: 94px;
 }
 .team-item:not(:last-child){
     margin-right: 30px;
 }
+.team-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
 .team-head{
-    margin-top: 30px;
+    
 }
 .team-porfolio{
     margin-top: 10px;
@@ -229,33 +244,25 @@ width: 270px;
 }
 
 /* Footer */
+.footer-container{
+    display: block;
+}
 .footer{
     background-color: #2F303A;
-    height: 252px;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
-    text-align: left;
-}
-.footer-container{
-    height: 252px;
     padding-top: 60px;
-}
-.logo{
-    width: 145px;
-    height: 31px;
-    padding: 0;
-}
-.footer-contact{
-    width: 240px;
-    height: 81px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 .link-footer{
     color: rgba(255, 255, 255, 0.6);
 }
-.contacts-item{
+.contacts-item:not(:last-child){
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contacts-item{
+    color: rgba(255, 255, 255, 0,6);
 }
 .logo-studio-footer{
     color: var(--main-title-color);
@@ -268,10 +275,13 @@ width: 270px;
 .address{
     color: var(--main-title-color);
     font-style: normal;
+    margin-top: 20px;
 }
 .contacts-list-footer{
     display: block;
+    color: rgba(255, 255, 255, 0,6);
     text-align: left;
+
 }
 
 /* Next page  */
