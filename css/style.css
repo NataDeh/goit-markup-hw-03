@@ -1,9 +1,10 @@
 :root{
     --main-title-color:#FFFFFF;
     --secondary-title-color:#212121;
-    --main-text-color:#757575;
-    --accent-color:#2196F3;
+    --main-text-color: rgba(117, 117, 117, 1);
+    --accent-color: rgba(33, 150, 243, 1);    ;
     --accent-hover-color:#188CE8;
+    --footer-contacts-color: rgba(255, 255, 255, 0,6)
 }
 
 /* logo */
@@ -31,13 +32,11 @@ body{
     letter-spacing: 0.03em;
 }
 p, h2, h3{
-    margin-top: 0; 
-    margin-bottom: 0;
+    margin: 0; 
 }
 ul{
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 .container{
     width: 1200px;
@@ -57,7 +56,11 @@ ul{
     color: var(--accent-hover-color);
 }
 
-/* Header */
+/* -------HEDER------------- */
+
+.header{
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 .main-nav{
     display: flex;
 }
@@ -83,6 +86,9 @@ h2{
     font-size: 36px;
     line-height: 1.16;
     Letter-spacing: 0.03em;
+}
+.header-item{
+    
 }
 .header-link{
     display: block;
@@ -130,17 +136,17 @@ h2{
     padding-bottom: 200px;
 }
 
-.about-hero{
+.hero-title{
     width: 696px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: var(--main-title-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    color: var(--main-title-color);
     text-transform: uppercase;
     margin-bottom: 30px;
     
@@ -153,22 +159,43 @@ h2{
     font-family:inherit;
     font-weight: 700;
     font-size: 16px;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;
     border-radius: 4px;
     margin: 0 auto 0 auto;
     padding: 0;
+    cursor: pointer;
     background-color: var(--accent-color);
-    color: rgba(255, 255, 255, 1);
+    color: var(--main-title-color)
 }
+    .btn:hover,
+    .btn:focus{
+        background-color: var(--accent-hover-color);
+        color: var(--main-title-color);
+    }
+
 
 /* About list */
 .about-section{
     padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.visualy-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;  
 }
 .about-list{
     display: flex;
-
 }
 
 .about-item{
@@ -195,10 +222,9 @@ width: 270px;
 
 /* Work */
 .work{
-    padding-top: 94px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
-.work-head{
+.work-title{
     margin-bottom: 50px;
 }
 .work-list{
@@ -227,13 +253,11 @@ width: 270px;
     margin-right: 30px;
 }
 .team-text{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
 }
-.team-head{
-    
-}
+
 .team-porfolio{
     margin-top: 10px;
     color: var(--main-text-color);
@@ -245,6 +269,7 @@ width: 270px;
 /* Footer */
 .footer{
     background-color: #2F303A;
+    color: var(--main-title-color);
     max-width: 1600px;
     margin: 0 auto;
     padding-top: 60px;
@@ -261,13 +286,11 @@ width: 270px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-bottom: ;
 }
 .link-footer{
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts-item:not(:last-child){
-    /* margin-top: 10px; */
     margin-bottom: 10px;
 }
 .contacts-item{
@@ -281,49 +304,55 @@ width: 270px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
-.address{
-    color: var(--main-title-color);
+.footer-address{
     font-style: normal;
     margin-top: 20px;
 }
+.footer-link{
+    color: var(--main-title-color);
+}
 .contacts-list-footer{
     display: block;
-    color: rgba(255, 255, 255, 0,6);
     text-align: left;
-    margin-top: 10px;
-
 }
+.footer-contact{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--footer-contacts-color);
+}
+.footer-item:not(:last-child){
+    margin-bottom: 10px;
+}
+
 
 /* Next page  */
 
-/* Filter portfolio */
-.filter{
-    padding-top: 94px;
-    padding-bottom: 34px;
-    align-items: center;
-}
-.filter-button-list{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-}
-.filter-button-item{
-    height: 38px;
-    
-    /* box-sizing: border-box; */
+/* ---------Portfolio------------- */
+.section{
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-    /* border: none;
-    border-radius: 4px; */
-    background-color: F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    align-items: center;
+    cursor: pointer;
 }
-.filter-button-item:not(:last-child){
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.filter-item{
+    height: 38px;
+    
+}
+.filter-item:not(:last-child){
     margin-right: 8px;
 }
-.filter-button-oll{
+.filter-oll{
     width: 73px;
     height: 38px;
     box-sizing: border-box;
@@ -337,17 +366,14 @@ width: 270px;
     background-color: var(--accent-color);
     color: rgba(255, 255, 255, 1);
 }
-.filter-button{
-    /* width: 73px; */
+.filter{
     height: 38px;
-    /* box-sizing: border-box; */
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
     color: rgba(33, 33, 33, 1);
-    background-color: F5F4FA;
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -356,25 +382,29 @@ width: 270px;
     border-radius: 4px;
 }
 
-/* Portfolio */
-.portfolio{
-    margin-bottom: 94px;
-}
-.portfolio-card-set{
+.portfolio-list{
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+    /* outline: 2px solid tomato; */
     margin-left: -30px;
     margin-top: -30px;
-    padding: 0;
-    list-style: none;
-    border: none;
+    
+    /* list-style: none;
+    border: none; */
 }
-.portfolio-item {
+.portfolio-list >.portfolio-item{
+    /* outline: 2px solid teal; */
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    border-radius: 4px;
+
 }
+
 .portfolio-text{
+    width: 369px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -385,5 +415,6 @@ width: 270px;
 }
 .portfolio-head{
     font-size: 18px;
-    line-height: 2;  
+    line-height: 2;
+    text-align: left;  
 }

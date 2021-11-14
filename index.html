@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hw-3</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">    
 </head>
 <body>
@@ -37,12 +37,13 @@
         <!-- Hero -->
         <section class="hero">
             <div class="container hero-container">
-                <h1 class="about-hero">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-button btn" type="button">Заказать услугу</button>
             </div>
         </section>
         <!-- About -->
         <section class="about-section">
+            <h2 class="visualy-hidden">О нас</h2>
             <div class="container about-container">
                 <ul class="about-list list">
                     <li class="about-item">
@@ -67,7 +68,7 @@
         <!-- Work -->
         <section class="work">
             <div class="container work-container">
-                <h2 class="work-head">Чем мы занимаемся</h2>
+                <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-item">
                         <img src="./images/sec-3/box-1.jpg" alt="Програмирование"
@@ -91,14 +92,14 @@
         <!-- Team -->
         <section class="team">
             <div class="container team-container">
-                <h2 class="work-head">Наша команда</h2>
+                <h2 class="work-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-item">
                         <img src="./images/sec-4/product-designer.jpg" alt="Игорь Демьяненко"
                         width="270"
                         height="260"/>
                         <div class="team-text">
-                            <h3 class="team-head">Игорь Демьяненко</h3>
+                            <h3 class="team-worker">Игорь Демьяненко</h3>
                             <p class="team-porfolio" lang="en">Product Designer</p>
                         </div>
                     </li>
@@ -107,7 +108,7 @@
                         width="270"
                         height="260"/>
                         <div class="team-text">
-                            <h3 class="team-head">Ольга Репина</h3>
+                            <h3 class="team-worker">Ольга Репина</h3>
                             <p class="team-porfolio" lang="en">Frontend Developer</p>
                         </div>
                     </li>
@@ -116,7 +117,7 @@
                         width="270"
                         height="260"/>
                         <div class="team-text">
-                            <h3 class="team-head">Николай Тарасов</h3>
+                            <h3 class="team-worker">Николай Тарасов</h3>
                             <p class="team-porfolio" lang="en">Marketing</p>
                         </div>
                     </li>
@@ -125,7 +126,7 @@
                         width="270"
                         height="260"/>
                         <div class="team-text">
-                            <h3 class="team-head">Михаил Ермаков</h3>
+                            <h3 class="team-worker">Михаил Ермаков</h3>
                             <p class="team-porfolio" lang="en">UI Designer</p>
                         </div>
                     </li>
@@ -139,17 +140,20 @@
             <a href="logo" class="link logo-footer">
                 <span class="logo-web">Web</span><span class="logo-studio-footer">Studio</span> 
             </a>
-                <address class="address">
-                    г. Киев, пр-т Леси Украинки, 26
-                </address>
+            <address class="footer-address">
                 <ul class="contacts-list-footer list">
-                    <li class="contacts-item">
-                        <a href="mailto:info@example.com" class="link link-footer">info@example.com</a>
+                    <li class="footer-item"> <a  class="link footer-link" href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk"
+                        target="_blank" rel="noopener noreferrer">
+                        г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>   
+                    <li class="footer-item">
+                        <a href="mailto:info@example.com" class="link footer-contact">info@example.com</a>
                     </li>
-                    <li class="contacts-item">
-                        <a href="tel:+380991111111" class="link link-footer">+38 099 111 11 11</a>
+                    <li class="footer-item">
+                        <a href="tel:+380991111111" class="link footer-contact">+38 099 111 11 11</a>
                     </li>
                 </ul>
+            </address>
         </div>
     </footer>
 </body>
